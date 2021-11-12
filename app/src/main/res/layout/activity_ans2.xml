@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".ans2"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFEB3B"
+    android:gravity="center"
+    android:padding="10dp">
+
+    <EditText
+        android:id="@+id/houseno"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="20dp"
+        android:backgroundTint="#3F51B5"
+        android:hint="Enter house no."
+        android:inputType="number"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:textColor="#FF0000"
+        android:textColorHint="#FF0000"
+        android:textSize="20sp" />
+
+    <RadioGroup
+        android:id="@+id/radiogrp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/houseno"
+        android:padding="5dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Select the house type :-"
+            android:padding="10dp"
+            android:textColor="#FF0000"
+            android:textSize="17sp" />
+
+        <RadioButton
+            android:id="@+id/phouse"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:buttonTint="@color/black"
+            android:text="Personal House"
+            android:textColor="#FF0000"
+            android:textSize="18sp" />
+
+
+        <RadioButton
+            android:id="@+id/rhouse"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/black"
+            android:buttonTint="@color/black"
+            android:text="Rented House"
+            android:textColor="#FF0000"
+            android:textSize="18sp" />
+
+        <RadioButton
+            android:id="@+id/apt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/black"
+            android:buttonTint="@color/black"
+            android:text="Apartment"
+            android:textColor="#FF0000"
+            android:textSize="18sp" />
+
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/checkBoxText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/radiogrp"
+        android:layout_marginLeft="15dp"
+        android:padding="10dp"
+        android:text="Select the lane :-"
+        android:textColor="#FF0000"
+        android:textSize="17sp" />
+
+    <CheckBox
+        android:id="@+id/first"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/checkBoxText"
+        android:buttonTint="@color/black"
+        android:paddingLeft="10dp"
+        android:text="First lane"
+        android:textColor="#FF0000"
+        android:textSize="18sp"
+        android:layout_marginLeft="11dp"/>
+
+    <CheckBox
+        android:id="@+id/second"
+        android:layout_below="@+id/first"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:buttonTint="@color/black"
+        android:paddingLeft="10dp"
+        android:text="Second lane"
+        android:textColor="#FF0000"
+        android:textSize="18sp"
+        android:layout_marginLeft="11dp"/>
+
+    <CheckBox
+        android:id="@+id/third"
+        android:layout_below="@+id/second"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#FF0000"
+        android:textSize="18sp"
+        android:paddingLeft="10dp"
+        android:buttonTint="@color/black"
+        android:text="Third lane"
+        android:layout_marginLeft="11dp"/>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/doneBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/third"
+        android:layout_marginStart="45dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="45dp"
+        android:layout_marginBottom="45dp"
+        android:backgroundTint="#3F51B5"
+        android:gravity="center"
+        android:text="Submit"
+        android:textAllCaps="false"
+        android:textColor="#FF0000"
+        android:textSize="20sp" />
+
+
+</RelativeLayout>
